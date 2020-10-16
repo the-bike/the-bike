@@ -1,0 +1,8 @@
+{
+  "makers": [
+    { "id": "m0", "name": "혼다", "country": "일본", "year": 1998 },
+    { "id": "m1", "name": "야마하", "country": "일본", "year": 1998 },
+    { "id": "m2", "name": "스즈키", "country": "일본", "year": 1998 },
+    { "id": "m3", "name": "카와사키", "country": "일본", "year": 1998 }
+  ]
+}

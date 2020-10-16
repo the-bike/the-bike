@@ -1,0 +1,9 @@
+{
+  "bikes": [
+    { "id": "b0", "name": "", "year": "", "makerId": "" },
+    { "id": "b1", "name": "", "year": "", "makerId": "" },
+    { "id": "b2", "name": "", "year": "", "makerId": "" },
+    { "id": "b3", "name": "", "year": "", "makerId": "" },
+    { "id": "b4", "name": "", "year": "", "makerId": "" }
+  ]
+}

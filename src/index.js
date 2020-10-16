@@ -5,6 +5,9 @@ import { Provider } from 'react-redux';
 import './index.css';
 import App from './App';
 import store from './app/store';
+import { fetchMakers } from './features/makers/makersSlice';
+
+store.dispatch(fetchMakers());
 
 ReactDOM.render(
   <React.StrictMode>

@@ -1,4 +1,5 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
+
 import { client } from '../../api/client';
 
 const initialState = {
@@ -18,8 +19,7 @@ export const fetchBooks = createAsyncThunk(
 const booksSlice = createSlice({
   name: 'books',
   initialState,
-  reducers: {
-  },
+  reducers: {},
   extraReducers: {
     [fetchBooks.pending]: (state, action) => {
       state.status = 'loading';
