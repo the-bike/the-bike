@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 import { selectAllBooks, fetchBooks } from './booksSlice';
 
@@ -8,11 +9,15 @@ const BookExcerpt = ({ book }) => {
     <article className="book-excerpt" key={book.id}>
       <h3>{book.title}</h3>
       <p>{book.author}</p>
+      <Link
+        className="btn btn-primary"
+        to={`/books/${book.id}`}
+      >Open</Link>
     </article>
   );
 };
 
-const BooksList = () => {
+export const BooksList = () => {
   const dispatch = useDispatch();
 
   const books = useSelector(selectAllBooks);
@@ -44,5 +49,3 @@ const BooksList = () => {
     </section>
   )
 };
-
-export default BooksList;
