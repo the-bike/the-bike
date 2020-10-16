@@ -6,6 +6,7 @@ import { selectBookById } from './booksSlice';
 
 export const SingleBookPage = () => {
   const { bookId } = useParams();
+
   const book = useSelector(state => selectBookById(state, bookId));
 
   if (!book) {
